@@ -24,20 +24,11 @@
 
 #include <iostream>
 
-
-
-namespace iMate {
-
-	constexpr char STDOUT_COPYRIGHT_NOTICE[] =        "  \n   \
-		iMate,  Copyright  (C)  2024   Martin Newbound   \n   \
-		This program comes with ABSOLUTELY NO WARRANTY   \n   \
-		for enquires, contact martin.nz.mail@gmail.com   \n   ";    
-}
-
+#include "constants.h"
 
 int main(int argc, char *argv[])
 {
-	std::cout << iMate::STDOUT_COPYRIGHT_NOTICE << std::endl; 
+	std::cout << iMate::Legal::COPYRIGHT_NOTICE << std::endl; 
 	
 
 	// init engine
